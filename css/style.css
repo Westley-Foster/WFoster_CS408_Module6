@@ -9,6 +9,8 @@ html {
 body {
   margin: 0;
   background: #ccc;
+
+  font-family: 'Open Sans',Arial,sans-serif;
 }
 
 article {
@@ -25,7 +27,7 @@ address {
 }
 
 h1 {
-  position: absolute;
+  /*position: absolute;*/
   top: 12mm;
   left: 20mm;
   width: 128px;
@@ -36,11 +38,16 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-position: center center;
+  filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.9));
 }
 
 /* Your CSS below here */
 /* Proper sizing of top and bottom images found on ChatGPT */
-.backgroundTop {
+.background-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -48,7 +55,7 @@ h1 {
   height: 100px;
 
   background-image: 
-    linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0)),  /* dark → transparent */
+    linear-gradient(to bottom, rgba(77, 71, 71, 0.3), rgba(255, 132, 132, 0)),  /* dark → transparent */
     url("../img/top-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -56,7 +63,7 @@ h1 {
   background-size: contain;
 }
 
-.backgroundBottom {
+.background-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -64,7 +71,7 @@ h1 {
   height: 100px;
 
   background-image: 
-    linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0)),  /* dark → transparent */
+    linear-gradient(to top, rgba(77, 71, 71, 0.3), rgba(255, 132, 132, 0)),  /* dark → transparent */
     url("../img/bottom-image.png");
 
   background-repeat: no-repeat;
@@ -73,6 +80,75 @@ h1 {
   background-size: contain;
 }
 
+.background {
+  margin: 0;
+  background-color: white;
+}
+
+.pageBorder {
+  box-sizing: border-box;
+  border-top: 1mm solid rgb(255, 82, 82);
+  border-bottom: 1mm solid rgb(255, 82, 82);
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0;
+}
+
 p {
-  color: blue;
+  color: black;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.quote-normal {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote-small {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Column styling reused from my lab 04 */
+.first-column:first-child {
+  flex: 3;
+  padding: 20px 10px;
+
+}
+
+.first-column:last-child {
+  flex: 1;
+  padding: 20;
+}
+
+.second-column:first-child {
+  flex: 3;
+  padding: 20px 10px;
+}
+
+.second-column:last-child {
+  flex: 1;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 5%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+hr {
+  margin-left: 0;
+  margin-right: auto;
+  border: none;
+  height: 14px;
 }
