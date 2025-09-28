@@ -41,7 +41,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="second-column">
             <h2>Why do we use it?</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ornare nisl, sed ullamcorper metus. Maecenas in ligula at quam egestas
@@ -61,8 +61,64 @@
               model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
               injected humour, or non-characteristic words etc.
             </p>
-          </div>
 
+            <!-- Form layout formatted with reference to the Lorum Ipsum website: https://www.lipsum.com/ -->
+            <form id="addRadio" role="checkbox">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="radio" name="paragraphs" value="paragraphs" id="paragraphs" checked="checked" placeholder="paragraphs" aria-label="generate x number of paragraphs">
+                            </td>
+                            <td>
+                              <label for="paragraphs">paragraphs</label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <input type="radio" name="words" value="words" id="words" placeholder="words" aria-label="generate an x number of words">
+                            </td>
+                            <td>
+                              <label for="words">words</label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <input type="radio" name="bytes" value="bytes" id="bytes" placeholder="bytes" aria-label="generate an x number of bytes">
+                            </td>
+                            <td>
+                              <label for="bytes">bytes</label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <input type="radio" name="lists" value="lists" id="lists" placeholder="lists" aria-label="generate an x number of lists">
+                            </td>
+                            <td>
+                              <label for="lists">lists</label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <input type="submit" name="generate" id="generate" value="Generate Lorum Ipsum">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
         </div>
 
         <address>

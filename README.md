@@ -27,3 +27,10 @@ To run the tests for the project, run the following command:
 ```bash
 npm test
 ```
+## References
+
+Sizing and positioning top and bottom images found with ChatGPT
+
+Column layout cleaned up with ChatGPT
+
+Radio button layout referenced by the Lorem Ipsum Generator website at https://www.lipsum.com/
