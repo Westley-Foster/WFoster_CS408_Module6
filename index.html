@@ -72,7 +72,7 @@
                         <tbody>
                           <tr>
                             <td>
-                              <input type="radio" name="paragraphs" value="paragraphs" id="paragraphs" checked="checked" placeholder="paragraphs" aria-label="generate x number of paragraphs">
+                              <input type="radio" name="option" value="paragraphs" id="paragraphs" checked="checked" placeholder="paragraphs" aria-label="generate x number of paragraphs">
                             </td>
                             <td>
                               <label for="paragraphs">paragraphs</label>
@@ -81,7 +81,7 @@
 
                           <tr>
                             <td>
-                              <input type="radio" name="words" value="words" id="words" placeholder="words" aria-label="generate an x number of words">
+                              <input type="radio" name="option" value="words" id="words" placeholder="words" aria-label="generate an x number of words">
                             </td>
                             <td>
                               <label for="words">words</label>
@@ -90,7 +90,7 @@
 
                           <tr>
                             <td>
-                              <input type="radio" name="bytes" value="bytes" id="bytes" placeholder="bytes" aria-label="generate an x number of bytes">
+                              <input type="radio" name="option" value="bytes" id="bytes" placeholder="bytes" aria-label="generate an x number of bytes">
                             </td>
                             <td>
                               <label for="bytes">bytes</label>
@@ -99,7 +99,7 @@
 
                           <tr>
                             <td>
-                              <input type="radio" name="lists" value="lists" id="lists" placeholder="lists" aria-label="generate an x number of lists">
+                              <input type="radio" name="option" value="lists" id="lists" placeholder="lists" aria-label="generate an x number of lists">
                             </td>
                             <td>
                               <label for="lists">lists</label>
@@ -112,7 +112,8 @@
                   <tr>
                     <td></td>
                     <td>
-                      <input type="submit" name="generate" id="generate" value="Generate Lorum Ipsum">
+                      <!-- <input type="submit" name="generate" id="generate" value="Generate Lorem Ipsum"> -->
+                       <button onclick="displayChoice()">Generate Lorem Ipsum</button>
                     </td>
                   </tr>
                 </tbody>
@@ -133,6 +134,16 @@
 
       <div class="background-bottom"></div>
     </div>
+
+    <!-- Script format referenced from Google and ChatGPT -->
+    <script>
+      function displayChoice() {
+        const selected = document.querySelector('input[name="option"]:checked');
+        if (selected) {
+          alert(selected.value);
+        }
+      }
+    </script>
     
   </body>
 </html>

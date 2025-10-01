@@ -34,3 +34,5 @@ Sizing and positioning top and bottom images found with ChatGPT
 Column layout cleaned up with ChatGPT
 
 Radio button layout referenced by the Lorem Ipsum Generator website at https://www.lipsum.com/
+
+Alert call script referenced by Google and ChatGPT

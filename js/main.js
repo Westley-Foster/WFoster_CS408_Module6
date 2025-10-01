@@ -9,6 +9,6 @@
 /**
  * This function prints the string 'Hello World' to the console
  */
-export function formSubmit() {
-    console.log('Hello World');
+export function displayChoice() {
+    window.alert('Hello World');
 }
