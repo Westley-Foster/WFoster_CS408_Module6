@@ -1,40 +1,43 @@
 # web-dev-starter
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+This is a project has us recreating a letterhead template using CSS. We mostly use CSS in this
+project to position, style, and format the letterhead template. 
 
 ## Getting Started
 
-To get started, clone this repository and run the following commands:
-
-```bash
-npm install
-```
-This will install the necessary dependencies for the project.
+To get started, simply just clone this repository.
 
 ## Development
 
-It is recommended to use the VSCode Live Server extension to run the project
-locally. This will allow you to see changes in real-time as you make them. There
-is no need to run a build process or refresh the page manually. Additionally,
-you do not need to setup a local server to run the project.
+If using VSCode, install the Live Server extension. This will allow you to view the changes to your code and
+project in real-time when running the ">Live Preview: Start Server" command in VSCode. This will open up a
+separate window displaying your webpage in real-time as you work on the project. 
+
+To see how your designed webpage will look in an actual browser, you can simply copy the web address from
+the opened window and paste it into your browser's search bar. This will display the full webpage and will
+also update in real-time as you work on the project.
+
+It's recommended to view your changes one at a time and adjust accordingly before moving on to the next task.
 
 ## Testing
 
-To run the tests for the project, run the following command:
+No test class was used for this project. To test if the webpage itself works, use the Live Server extension
+to start the server using the command ">Live Preview: Start Server". Once started, a preview window will
+appear displaying the webpage. You can copy the web address and paste it into your browser to see the full
+display of the webpage.
 
-```bash
-npm test
-```
 ## References
 
 Sizing and positioning top and bottom images found with ChatGPT
 
-Column layout cleaned up with ChatGPT
+Column layout used from previous lab and further cleaned up with ChatGPT
 
-Linear-gradient referenced by ChatGPT
+Linear-gradient on top and bottom images referenced by ChatGPT
 
-Radio button layout referenced by the Lorem Ipsum Generator website at https://www.lipsum.com/
+Form radio, checkbox, button layout, and '<hr>' rule referenced by the Lorem Ipsum Generator website at https://www.lipsum.com/
 
 Alert call script referenced by Google and ChatGPT
+
+Importing a custom font style using @font-face found on Google's AI Overview
+
+DauphinPlain font style copied from Lorem Ipsum website at https://www.lipsum.com/
